@@ -17,6 +17,10 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Welcome from './components/Welcome';
 
+// const axios = require('axios')
+// const apiKey = process.env.API_KEY;
+// const cors = require('cors')
+
 
 const PrivateRoute = ({ component: Component, ...rest}) => {
   let token = localStorage.getItem('jwtToken');
@@ -44,6 +48,13 @@ function App() {
       setCurrentUser(token);
     }
   }, []);
+
+  // useEffect(() => {
+  //   axios.get(`https://partners.every.org/v0.2/search/maps?apiKey=${apiKey}`)
+  //     .then((response) => {
+  //       console.log(response.data);
+  //     }).catch((err) => { console.log('****************ERROR', err) });
+  // }, []);
 
   const nowCurrentUser = (userData) => {
     console.log('===> nowCurrent is here.');
