@@ -14,9 +14,25 @@
   background: none;
   transition: color 0.3s;
 }
-.menu-bars a:hover {
-  color: #AF2C02;
-  z-index: 99;
+
+.openMenu {
+  color: #DAA520; 
+  transition: color 0.3s;
+}
+
+
+.openMenu:hover {
+  color: #E0E1E3;
+}
+
+.closeMenu {
+  color: #DAA520; 
+  transition: color 0.3s;
+}
+
+
+.closeMenu:hover {
+  color: #E0E1E3;
 }
 
 .nav-menu {
@@ -79,4 +95,23 @@
 
 span {
   margin-left: 16px;
+}
+
+.genNavLogo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  max-width: 150px;
+}
+
+.logoutBtn {
+  position: relative;
+  display: inline-flex;
+  color: white;
+  font-family: 'Caveat', cursive;
+  left: 0px;
+  top: 800px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
 }
