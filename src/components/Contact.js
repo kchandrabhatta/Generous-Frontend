@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as AiIcons from "react-icons/ai";
 import { AiFillPhone } from "react-icons/ai";
 import { AiTwotoneEnvironment } from "react-icons/ai";
+const { REACT_APP_SERVER_URL } = process.env;
 
 const Contact = () => {
     const [input, setInput] = useState({
@@ -33,7 +34,7 @@ const Contact = () => {
         }
         alert("Thank you for reaching out! We'll get back to you as soon as we can.")
         
-        axios.post(`http://localhost:8000/users/:id/contact`, newContact)
+        axios.post(`${REACT_APP_SERVER_URL}/users/:id/contact`, newContact)
     }
 
 
