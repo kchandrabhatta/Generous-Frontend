@@ -88,7 +88,7 @@ function App() {
           <Route exact path="/" component={Welcome} />
           <Route path="/nonprofit" component={Nonprofits} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/contact" component={Contact} user={currentUser} handleLogout={handleLogout} />
         </Switch>
       </div>
       <Footer />
