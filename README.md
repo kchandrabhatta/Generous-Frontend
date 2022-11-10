@@ -1,3 +1,86 @@
+Generous Frontend
+
+This is the frontend repository for the Generous app. It contains the code necessary for the client to view the app. It was designed to work with the app's backend repository. To use the entire app, visit the Generous site.
+
+Contents
+
+About
+Installation
+Explanation
+User Stories
+Features
+Dependencies
+Designs
+Views
+Code Examples
+Stretch Goals
+About
+
+Generous is an app for searching up for all your favorite comuunity service organizations. It was made through the collaborative efforts of Tanner Eschmann, Connor Cappello, Nainoa Villegas, and Krishna Chandrabhatta.
+
+Installation
+
+Create Local Repositories
+
+Fork and clone this repository and the corresponding backend repository to your local computer (we recommend storing both directories in a common Generous folder)
+Run npm i to install all necessary dependencies
+Set up a .env file to hold the REACT_APP_SERVER_URL and REACT_APP_NUMBEO_API_KEY variables 
+Set Up Local Database
+
+Ensure you have MongoDB installed on your local computer by typing mongo into your terminal to launch the Mongo shell (install MongoDB if necessary)
+Upon running the backend repo (see next step), a new database named generous should automatically appear in your local MongoDB (confirm by typing show dbs while in the Mongo shell)
+Run Locally
+
+Run npm start from within both the backend directory and the frontend directory
+View the live version of the site at http://localhost:3000 in the browser of your choosing
+Alternatively, you may use the live version of the Generous app.
+
+Explanation
+
+We decided to create an app where users will be able to find different community service organizations using the Every API. The goal of the app is for users to be able to create their own accounts. They can search for the community service organizations they are intersted in participating in. Users would be able to save those organizations in the own list for future use. 
+
+User Stories
+
+As a potential user, I want to sign up for Generous, so I can use the service.
+As a user, I want the ability to log in, so I can securely access my data.
+As a user, I want to log out of the application, so I can keep my information secure.
+As a new user, I want to enter my financial data, so I can donate money.
+As a user, I want to see my saved organizations.
+As a user, I want to be able to search for any organization I want.
+As a user, I want to easily navigate the application, so I can easily use it.
+As a user, I want to see my name displayed user's when I am logged in, so I can know I am logged in.
+
+
+Features
+
+Forms for signing up and logging in users
+Forms for searching for organizations
+Views for a homepage and about page
+location
+
+Dependencies
+
+@testing-library/jest-dom
+@testing-library/react
+@testing-library/user-event
+axios
+dotenv
+jwt-decode
+react
+react-alert
+react-alert-template-basic
+react-dom
+react-router-dom
+react-scripts
+react-transition-group
+recharts
+web-vitals
+
+EVERY API
+
+https://www.every.org/developer
+
+
 # Setup
 
 Due to this project using an older package not fully supported on node17+ we'll need to run one initial command before we run our npm install. 
